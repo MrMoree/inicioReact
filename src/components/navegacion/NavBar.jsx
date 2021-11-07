@@ -6,14 +6,13 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import CartWidget from './CartWidget';
+import { CartWidget2 } from './CartWidget';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
 const Search = styled('div')(({ theme }) => ({
@@ -56,7 +55,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
-export default function NavBar() {
+export default function PrimarySearchAppBar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
     
@@ -97,8 +96,8 @@ export default function NavBar() {
         open={isMenuOpen}
         onClose={handleMenuClose}
         >
-        <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-        <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+        <MenuItem onClick={handleMenuClose}>Mis Datos</MenuItem>
+        <MenuItem onClick={handleMenuClose}>Cerrar Sesión</MenuItem>
         </Menu>
         );
         
@@ -119,26 +118,10 @@ export default function NavBar() {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
             >
-            <MenuItem>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-            <Badge badgeContent={4} color="error">
-            <MailIcon />
-            </Badge>
-            </IconButton>
-            <p>Messages</p>
-            </MenuItem>
-            <MenuItem>
-            <IconButton
-            size="large"
-            aria-label="show 17 new notifications"
-            color="inherit"
-            >
-            <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-            </Badge>
-            </IconButton>
-            <p>Notifications</p>
-            </MenuItem>
+            
+            {/* carrito de compras */}
+            <CartWidget />
+            
             <MenuItem onClick={handleProfileMenuOpen}>
             <IconButton
             size="large"
@@ -173,7 +156,7 @@ export default function NavBar() {
                 component="div"
                 sx={{ display: { xs: 'none', sm: 'block' } }}
                 >
-                MUI
+                MC: Sabor Artesanal
                 </Typography>
                 <Search>
                 <SearchIconWrapper>
@@ -186,20 +169,10 @@ export default function NavBar() {
                 </Search>
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-                <Badge badgeContent={4} color="error">
-                <MailIcon />
-                </Badge>
-                </IconButton>
-                <IconButton
-                size="large"
-                aria-label="show 17 new notifications"
-                color="inherit"
-                >
-                <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-                </Badge>
-                </IconButton>
+                
+                {/* carrito de compras 2 */}
+                <CartWidget2 />
+                
                 <IconButton
                 size="large"
                 edge="end"
@@ -231,3 +204,4 @@ export default function NavBar() {
                 </Box>
                 );
             }
+            
