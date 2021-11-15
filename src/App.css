@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.divCounter {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.botonCounter {
+  margin: 0 3% 0 3%;
+}
