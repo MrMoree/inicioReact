@@ -7,6 +7,7 @@ const data = [
       "https://static.wixstatic.com/media/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.png/v1/fill/w_261,h_189,al_c,q_85,usm_0.66_1.00_0.01/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.webp",
     descripcion: "lo mas rico de córdoba",
     precio: 10,
+    cantidad: 6,
   },
 
   {
@@ -17,6 +18,7 @@ const data = [
       "https://static.wixstatic.com/media/29f523_6d76f0e9fee949029ebd0248d046f611~mv2.png/v1/fill/w_261,h_189,al_c,q_85,usm_0.66_1.00_0.01/29f523_6d76f0e9fee949029ebd0248d046f611~mv2.webp",
     descripcion: "lo mas rico de córdoba",
     precio: 20,
+    cantidad: 3,
   },
 
   {
@@ -27,13 +29,14 @@ const data = [
       "https://static.wixstatic.com/media/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.png/v1/fill/w_261,h_189,al_c,q_85,usm_0.66_1.00_0.01/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.webp",
     descripcion: "lo mas rico de córdoba",
     precio: 15,
+    cantidad: 4,
   },
 ];
 
 const ObtenerProducto = new Promise((resolve) => {
   setTimeout(() => {
     resolve(data);
-  }, 5000);
+  }, 2000);
 });
 
 export default ObtenerProducto;

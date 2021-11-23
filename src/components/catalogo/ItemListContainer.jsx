@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 import ObtenerProducto from "../servicios/PromesaManual";
 import { useEffect, useState } from "react";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -14,8 +14,6 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <>
-      <h2>Soy el ItemListContainer</h2>
-      <h3>{greeting}</h3>
       <ItemList productos={productos} />
     </>
   );
