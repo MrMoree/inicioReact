@@ -2,6 +2,8 @@ import * as React from "react";
 import { useState } from "react";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import Button from "@mui/material/Button";
 
 const ItemCount = ({ stock, initial }) => {
   //console.log("soy stock de ItemCount: ", stock);
@@ -31,16 +33,28 @@ const ItemCount = ({ stock, initial }) => {
   return (
     <>
       <div className="divCounter">
-        <button className="botonCounter" onClick={quitItem}>
-          <RemoveCircleIcon />
-        </button>
-        <h3 className="botonCounter">{count}</h3>
-        <button className="botonCounter" onClick={addItem}>
-          <AddCircleIcon />
-        </button>
+        <Button
+          className="botonCounter"
+          onClick={quitItem}
+          startIcon={<RemoveCircleIcon />}
+        />
+
+        <h3 className="itemCount">{count}</h3>
+
+        <Button
+          className="botonCounter"
+          onClick={addItem}
+          startIcon={<AddCircleIcon />}
+        />
       </div>
 
-      <button onClick={onAdd}>Agregar al carrito</button>
+      <Button
+        onClick={onAdd}
+        variant="outlined"
+        startIcon={<AddShoppingCartIcon />}
+      >
+        Agregar al Carrito
+      </Button>
     </>
   );
 };

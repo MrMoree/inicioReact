@@ -1,14 +1,25 @@
+import Card from "@mui/material/Card";
 import * as React from "react";
 import ItemCount from "./ItemCount";
+import CardMedia from "@mui/material/CardMedia";
+import Chip from "@mui/material/Chip";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 
-const Item = (titulo, precio, descripcion, imagen, cantidad) => {
+const Item = ({ titulo, precio, descripcion, imagen, cantidad }) => {
   return (
     <>
-      <h3>{titulo}</h3>
-      <img src={imagen} alt="" />
-      <h4>{precio}</h4>
-      <p>{descripcion}</p>
-      <ItemCount stock={cantidad} initial={1} />
+      <Card className="carta" sx={{ height: 650 }}>
+        <h3>{titulo}</h3>
+        <CardMedia component="img" image={imagen} alt={titulo} />
+        <Chip
+          className="precioChip"
+          label={precio}
+          color="error"
+          icon={<MonetizationOnIcon />}
+        />
+        <p>{descripcion}</p>
+        <ItemCount stock={cantidad} initial={1} />
+      </Card>
     </>
   );
 };

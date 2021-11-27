@@ -1,34 +1,49 @@
 const data = [
   {
     id: "001",
-    titulo: "Alfajor de Maicena con Dulce de Leche",
+    titulo: "Alfajor de Maicena",
     categoria: "Alfajores",
     imagen:
-      "https://static.wixstatic.com/media/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.png/v1/fill/w_261,h_189,al_c,q_85,usm_0.66_1.00_0.01/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.webp",
-    descripcion: "lo mas rico de córdoba",
-    precio: 10,
+      "https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5fadc310c627236d333a2846_Empaques_Mesa%20de%20trabajo%201.png",
+    descripcion:
+      "Rellenos con dulce de leche. Decorados con coco rallado. Paquete x 6 unidades",
+    precio: 200,
     cantidad: 6,
   },
 
   {
     id: "002",
-    titulo: "Torta Matera de Naranja",
-    categoria: "Tortas",
+    titulo: "Alfajor de Chocolate",
+    categoria: "Alfajores",
     imagen:
-      "https://static.wixstatic.com/media/29f523_6d76f0e9fee949029ebd0248d046f611~mv2.png/v1/fill/w_261,h_189,al_c,q_85,usm_0.66_1.00_0.01/29f523_6d76f0e9fee949029ebd0248d046f611~mv2.webp",
-    descripcion: "lo mas rico de córdoba",
-    precio: 20,
+      "https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5fada020bb83d91da981d455_Empaque%2003.png",
+    descripcion:
+      "Rellenos con dulce de leche. Cubiertos con baño de chocolate negro. Decorados con maní crocante. Paquete x 6 unidades",
+    precio: 240,
     cantidad: 3,
   },
 
   {
     id: "003",
-    titulo: "Pepas x24 unidades",
+    titulo: "ALfajor de Chocolate Blanco",
     categoria: "Alfajores",
     imagen:
-      "https://static.wixstatic.com/media/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.png/v1/fill/w_261,h_189,al_c,q_85,usm_0.66_1.00_0.01/29f523_31c4b301eef44450a2bb552944c3cc65~mv2.webp",
-    descripcion: "lo mas rico de córdoba",
-    precio: 15,
+      "https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5fada01fc6436005c565ad5e_Empaque%2002.png",
+    descripcion:
+      "Rellenos con dulce de leche. Cubiertos con baño de chocolate blanco. Decorados con maní crocante. Paquete x 6 unidades",
+    precio: 240,
+    cantidad: 4,
+  },
+
+  {
+    id: "004",
+    titulo: "Alfajor Cordobés con dulce de fruta",
+    categoria: "Alfajores",
+    imagen:
+      "https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5fada023b6c7feccb52ca40c_Empaque%2004.png",
+    descripcion:
+      "Rellenos con mermelada de membrillo. Cubiertos con baño de azúcar. Paquete x 6 unidades",
+    precio: 180,
     cantidad: 4,
   },
 ];

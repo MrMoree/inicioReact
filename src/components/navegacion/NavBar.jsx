@@ -149,6 +149,12 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
+          <img
+            id="imgNavbar"
+            src="https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5eff8e3a44b49ed6c369d7b1_Isologo%20Color.png"
+            alt="logoMC"
+            width="50px"
+          />
           <Typography
             variant="h6"
             noWrap
