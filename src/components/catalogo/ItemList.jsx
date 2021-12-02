@@ -14,13 +14,13 @@ const ItemList = ({ productos }) => {
             return (
               <Grid item xs={4}>
                 <Item
-                  key={productos.id}
+                  id={producto.id}
                   titulo={producto.titulo}
                   imagen={producto.imagen}
                   precio={producto.precio}
                   categoria={producto.categoria}
-                  cantidad={producto.cantidad}
                   descripcion={producto.descripcion}
+                  presentacion={producto.presentacion}
                 />
               </Grid>
             );

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.negrita {
+  font-weight: bold;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,14 +41,9 @@
   }
 }
 
-#imgNavbar {
-  margin-right: 1%;
-}
-
 .divCounter {
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
 }
 
 .botonCounter span {
@@ -54,6 +53,15 @@
 .precioChip {
   font-size: 1.5125rem !important;
   height: 40px !important;
+}
+
+.precioChipDetail {
+  font-size: 2.5125rem !important;
+  height: 50px !important;
+}
+
+.iconoDetail {
+  font-size: 92% !important;
 }
 
 .itemCount {
@@ -66,5 +74,25 @@
 }
 
 .carta {
+  height: 500px;
   padding: 4%;
+}
+
+#linkNavbar {
+  display: flex;
+  width: 20%;
+  text-decoration: none !important;
+}
+
+#linkNavbar:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#imgNavbar {
+  margin-right: 5%;
+}
+
+#tipoNavbar {
+  margin-top: 2%;
 }

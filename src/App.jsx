@@ -1,6 +1,9 @@
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/navegacion/NavBar";
 import ItemListContainer from "./components/catalogo/ItemListContainer";
+import ItemDetailContainer from "./components/catalogo/ItemDetailContainer";
 
 function App() {
   return (
@@ -8,9 +11,10 @@ function App() {
       <div>
         <NavBar />
       </div>
-      <div>
-        <ItemListContainer />
-      </div>
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="item/:id" element={<ItemDetailContainer />} />
+      </Routes>
     </div>
   );
 }

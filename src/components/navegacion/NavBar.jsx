@@ -14,6 +14,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import CartWidget from "./CartWidget";
 import { CartWidget2 } from "./CartWidget";
 import MoreIcon from "@mui/icons-material/MoreVert";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -149,26 +150,31 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <img
-            id="imgNavbar"
-            src="https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5eff8e3a44b49ed6c369d7b1_Isologo%20Color.png"
-            alt="logoMC"
-            width="50px"
-          />
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            MC: Sabor Artesanal
-          </Typography>
+          <Link to={`/`} id="linkNavbar">
+            <img
+              src="https://uploads-ssl.webflow.com/5eb1b1fef466519fb266c194/5eff8e3a44b49ed6c369d7b1_Isologo%20Color.png"
+              alt="logoMC"
+              width="50px"
+              id="imgNavbar"
+            />
+
+            <Typography
+              id="tipoNavbar"
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
+              MC: Sabor Artesanal
+            </Typography>
+          </Link>
+
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Buscar..."
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
